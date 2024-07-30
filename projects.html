@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html
+    style="--olcb-folder-code-block-max-height: 80vh; --cnb-code-bg: rgb(243, 243, 243); --cnb-code-font-size: 13px; --cnb-code-color: rgb(68, 68, 68);background-color: rgba(30, 34, 60, 0.966);background:repeating-linear-gradient(to right,rgba(30, 34, 60, 0.966),rgba(54, 61, 106, 0.966));"
+    theme="dark">
+
+<head>
+    <link rel="icon" href="icon/file.ico">
+    <title>ヾ(^▽^*) 文件 |neverforward</title>
+    <style>
+        .body {
+            border-radius: 25px;
+            height: 800px;
+            position: relative;
+            /* 添加此属性以便正确定位伪元素 */
+        }
+
+        .button {
+            padding: 15px 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .vertical-menu {
+            margin-left: 10px;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            /* 如果需要垂直堆叠 */
+            gap: 10px;
+            border-radius: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .vertical-menu a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .vertical-menu a:hover {
+            background-color: rgb(54, 63, 120);
+            border-radius: 5px;
+        }
+
+        .main {
+            padding-top: 2%;
+            margin-top: 2%;
+            margin-left: 5%;
+            background-color: rgba(38, 44, 81, 0.966);
+            height: 750px;
+        }
+
+        .cards {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            padding-right: 10px;
+        }
+
+        .card {
+            background-color: rgba(55, 63, 116, 0.966);
+            border-radius: 5px;
+            width: 300px;
+            margin-left: 10px;
+            margin-top: -25px;
+            padding-left: 10px;
+            height: 200px;
+            color: white;
+            box-shadow: 0px 0px 10px rgba(18, 20, 35, 0.966);
+            transition: boc-shadow 1s;
+        }
+
+        .card button {
+            color: white;
+            text-decoration: none;
+            background-color: rgb(0, 106, 255);
+            background-image: linear-gradient(to right, #0091ff, #005eff);
+            border: none;
+            border-radius: 5px;
+            margin-left: 200px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgb(0, 85, 255);
+            font-size: 12px;
+            transition: padding-left 500ms, padding-right 500ms, box-shadow 500ms, font-size 500ms;
+        }
+
+        .card button:hover {
+            box-shadow: 5px 5px 10px rgb(0, 85, 255);
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 15px;
+            transition: all 500ms;
+        }
+
+        .card:hover {
+            box-shadow: 4px 4px 10px rgba(18, 20, 35, 0.966);
+            transition: box-shadow 1s;
+        }
+    </style>
+    <script src="typewriter.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+
+<body style="background-size: 100% 100%;">
+    <div class="body">
+        <div class="vertical-menu">
+            <a href="index.html"><i class="fa fa-home" style="font-size: 30px;color: #28BF94;"></i></a>
+            <a href="projects.html"><i class="fa fa-folder" style="font-size: 25px; color: rgb(255, 230, 0);"></i></a>
+            <a href="https://github.com/neverforward"><i class="fa fa-github"
+                    style="font-size: 30px;color: white;"></i></a>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <h2><svg t="1720705439237" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="4705" width="20" height="20">
+                            <path d="M0 96V0h1024v96z" fill="#13CBB9" p-id="4706"></path>
+                            <path
+                                d="M384 1022.72V606.4H255.488a64 64 0 0 1-46.336-108.16l256.448-269.312a64 64 0 0 1 92.8 0l255.744 269.44a64 64 0 0 1-46.4 108.032h-120.32v416.32H384z"
+                                fill="#13CBB9" p-id="4707"></path>
+                        </svg>[置顶]2D-minecraft</h2>
+                    <p>摘要：2D我的世界</p>
+                    <br>
+                    <br>
+                    <button onclick="window.open('https:\/\/github.com/neverforward/2D-minecraft')">查看>></button>
+                </div>
+                <div class="card">
+                    <h2>MTL</h2>
+                    <p>摘要：一个包含很多函数的库</p>
+                    <br>
+                    <br>
+                    <button onclick="window.open('https:\/\/github.com/neverforward/MTL')">查看>></button>
+                </div>
+                <div class="card">
+                    <h2>wintools</h2>
+                    <p>摘要：windows的工具箱</p>
+                    <br>
+                    <br>
+                    <button onclick="window.open('https:\/\/github.com/neverforward/wintools')">查看>></button>
+                </div>
+                <div class="card">
+                    <h2>console-plus</h2>
+                    <p>摘要：让控制台更生动</p>
+                    <br>
+                    <br>
+                    <button onclick="window.open('https:\/\/github.com/neverforward/console-plus')">查看>></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
