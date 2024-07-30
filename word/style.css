@@ -1,0 +1,605 @@
+html {
+    background-color: rgba(30, 34, 60, 0.966);
+    background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
+}
+
+.word {
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: rgba(27, 31, 58, .966);
+    padding-bottom: 20px;
+    margin: 20px 10px 20px 70px
+}
+
+.word .code {
+    padding: 2px 4px;
+    font-size: 100%;
+    color: rgba(237, 118, 137, .9);
+    background-color: #222;
+    border-radius: 4px;
+    width: min-content;
+    font-family: "cascadia code"
+}
+
+.word,
+.word pre {
+    border-radius: 10px
+}
+
+.word h1 {
+    position: relative;
+    /* 使::after的定位生效 */
+    font-family: Georgia;
+    color: rgb(38, 172, 255);
+    border-bottom: .1rem solid var(--bs-gray-dark);
+    padding-left: 10px;
+    margin-left: -15px;
+
+    &::before {
+        content: "H  ";
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 200;
+        font-size: 30px;
+        color: rgb(38, 172, 255);
+    }
+
+    &::after {
+        content: " 1";
+        position: absolute;
+        /* 添加绝对定位 */
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 50%;
+        color: rgb(38, 172, 255);
+        line-height: 3;
+        width: 1.25rem;
+        font-weight: 200;
+        left: 30px;
+    }
+}
+
+.word h2 {
+    font-family: Georgia;
+    color: rgb(38, 172, 255);
+    font-family: Georgia;
+    color: var(--bs-white);
+
+    &::before {
+        content: "H    ";
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 200;
+        font-size: 25px;
+        color: rgb(38, 172, 255);
+        left: 164.5px;
+    }
+
+    &::after {
+        content: " 2 ";
+        position: absolute;
+        /* 添加绝对定位 */
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 40%;
+        color: rgb(38, 172, 255);
+        line-height: 4;
+        width: 1.25rem;
+        font-weight: 200;
+        left: 172.5px;
+    }
+}
+
+.word h3 {
+    font-family: Georgia;
+    color: rgb(38, 172, 255);
+    font-family: Georgia;
+    color: var(--bs-white);
+
+    &::before {
+        content: "H    ";
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+        color: rgb(38, 172, 255);
+        left: 162px;
+    }
+
+    &::after {
+        content: " 3 ";
+        position: absolute;
+        /* 添加绝对定位 */
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 40%;
+        color: rgb(38, 172, 255);
+        line-height: 4;
+        width: 1.25rem;
+        font-weight: 200;
+        left: 170px;
+    }
+}
+
+.word h4 {
+    font-family: Georgia;
+    color: rgb(38, 172, 255);
+    font-family: Georgia;
+    color: var(--bs-white);
+
+    &::before {
+        content: " H ";
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 180;
+        font-size: 18px;
+        color: rgb(38, 172, 255);
+        left: 160px;
+    }
+
+    &::after {
+        content: " 4 ";
+        position: absolute;
+        /* 添加绝对定位 */
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 40%;
+        color: rgb(38, 172, 255);
+        line-height: 4;
+        width: 1.25rem;
+        font-weight: 200;
+        left: 168px;
+    }
+}
+
+.word h5 {
+    font-family: Georgia;
+    color: rgb(38, 172, 255);
+    font-family: Georgia;
+    color: var(--bs-white);
+
+    &::before {
+        content: " H ";
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 160;
+        font-size: 16px;
+        color: rgb(38, 172, 255);
+        left: 158px;
+    }
+
+    &::after {
+        content: " 5 ";
+        position: absolute;
+        /* 添加绝对定位 */
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 40%;
+        color: rgb(38, 172, 255);
+        line-height: 4;
+        width: 1.25rem;
+        font-weight: 200;
+        left: 166px;
+    }
+}
+
+.word h6 {
+    font-family: Georgia;
+    color: rgb(38, 172, 255);
+    font-family: Georgia;
+    color: var(--bs-white);
+
+    &::before {
+        content: " H ";
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: 140;
+        font-size: 14px;
+        color: rgb(38, 172, 255);
+        left: 158px;
+    }
+
+    &::after {
+        content: " 6 ";
+        position: absolute;
+        /* 添加绝对定位 */
+        font-family: Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 40%;
+        color: rgb(38, 172, 255);
+        line-height: 4;
+        width: 1.25rem;
+        font-weight: 200;
+        left: 166px;
+    }
+}
+
+.word .note-warning {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-left: .25rem solid #ffda6a;
+    background-color: #ffe17580;
+    color: #ffda6a;
+    margin-right: 10px;
+    border-radius: .1875rem;
+    font-size: 16px;
+    transition: all .5s
+}
+
+.word .note-danger:hover,
+.word .note-info:hover,
+.word .note-warning:hover {
+    font-size: 20px;
+    transition: all .5s
+}
+
+.word .note-end,
+.word .note-info {
+    border-left: .25rem solid #63b1ff;
+    background-color: #63b1ff80;
+    color: #63b1ff
+}
+
+.word .note,
+.word .note-danger,
+.word .note-end,
+.word .note-info {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    margin-right: 10px;
+    border-radius: .1875rem;
+    transition: all .5s
+}
+
+.word .note-danger {
+    border-left: .25rem solid #ff5c5c;
+    background-color: #ff5c5c80;
+    color: #ff5c5c
+}
+
+.word .note {
+    border-left: .25rem solid var(--bs-primary);
+    background-color: rgba(51, 59, 112, .966);
+    color: var(--bs-white)
+}
+
+.word ins {
+    text-decoration: none;
+    border-bottom: .125rem solid #2774f9
+}
+
+.word .dot,
+.word .wavy {
+    --line-color: #2774f9;
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+}
+
+.word .wavy {
+    text-decoration-line: underline;
+    -webkit-text-decoration-color: var(--line-color);
+    text-decoration-color: var(--line-color);
+    border-bottom: none
+}
+
+.word .dot {
+    text-decoration-line: none;
+    border-bottom: .2rem dotted var(--line-color)
+}
+
+.word .link {
+    background-color: rgba(62, 66, 91, .966);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px #3a465c;
+    transition: all .5s
+}
+
+.word .link:hover {
+    background-color: rgba(67, 92, 254, .966);
+    box-shadow: 8px 8px 10px #3a465c, -8px -8px 10px #3a465c;
+    transition: all .5s
+}
+
+.word .spoiler,
+.word button {
+    border-radius: 5px;
+    margin-top: 10px
+}
+
+.word .spoiler {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    color: rgba(62, 70, 122, .966);
+    background-color: rgba(62, 70, 122, .966);
+    border-color: rgba(42, 47, 81, .966);
+    box-sizing: border-box;
+    transition: all .5s
+}
+
+.word .spoiler:hover {
+    color: rgba(255, 255, 255, .966);
+    border-radius: 1px;
+    transition: all .5s
+}
+
+.word button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #006aff;
+    background-image: linear-gradient(to right, #0091ff, #005eff);
+    border: 0;
+    margin-left: 0;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px #05f;
+    font-size: 12px;
+    transition: padding-left 500ms, padding-right 500ms, box-shadow 500ms, font-size 500ms
+}
+
+.word button:hover {
+    box-shadow: 5px 5px 10px #05f;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    transition: all 500ms
+}
+
+.word .codes {
+    overflow: hidden !important;
+    font-family: 'cascadia mono', 'cascidia code';
+    margin-right: 10px;
+}
+
+.word ol li.done::before,
+.word ul li.done::before {
+    display: inline;
+    border-radius: 50%;
+    position: absolute;
+    transition: all .2s
+}
+
+.word ul li.done::before {
+    content: "";
+    border: 1px solid var(--bs-primary);
+    width: .4em;
+    height: .4em;
+    margin-top: .6em;
+    margin-left: -10px
+}
+
+.word ul li:hover.done::before {
+    background-color: #2a7ffd;
+    transition: all .2s
+}
+
+.word ol li,
+.word ul li {
+    margin-left: -25px;
+    list-style: none
+}
+
+.word ol li.done::before {
+    counter-increment: counter;
+    content: counter(counter);
+    border: 4px solid var(--bs-primary);
+    background-color: var(--bs-primary);
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: -35px;
+    margin-top: 2px;
+    padding-left: 2px;
+    line-height: .7;
+    font-size: .8em;
+    font-family: 'cascadia code light'
+}
+
+.word ol li:hover.done::before {
+    background-color: #5498ff;
+    border: 4px solid #5498ff;
+    transition: all .2s
+}
+
+.word ol li {
+    margin-left: -5px;
+    font-size: 1
+}
+
+.word ol {
+    counter-reset: counter
+}
+
+.word {
+    .blue {
+        color: var(--bs-blue);
+    }
+
+    .indigo {
+        color: var(--bs-indigo);
+    }
+
+    .purple {
+        color: var(--bs-purple);
+    }
+
+    .pink {
+        color: var(--bs-pink);
+    }
+
+    .red {
+        color: var(--bs-red);
+    }
+
+    .orange {
+        color: var(--bs-orange);
+    }
+
+    .yellow {
+        color: var(--bs-yellow);
+    }
+
+    .green {
+        color: var(--bs-green);
+    }
+
+    .teal {
+        color: var(--bs-teal);
+    }
+
+    .cyan {
+        color: var(--bs-cyan);
+    }
+
+    .white {
+        color: var(--bs-white);
+    }
+
+    .gray {
+        color: var(--bs-gray);
+    }
+
+    .gray-dark {
+        color: var(--bs-gray-dark);
+    }
+
+    .primary {
+        color: var(--bs-primary);
+    }
+
+    .secondary {
+        color: var(--bs-secondary);
+    }
+
+    .success {
+        color: var(--bs-success);
+    }
+
+    .info {
+        color: var(--bs-info);
+    }
+
+    .warning {
+        color: var(--bs-warning);
+    }
+
+    .danger {
+        color: var(--bs-danger);
+    }
+
+    .light {
+        color: var(--bs-light);
+    }
+
+    .dark {
+        color: var(--bs-dark);
+    }
+}
+
+/* 加载动画样式 */
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation:
+        spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap:nth-child(1) {
+    animation-delay: -50ms;
+}
+
+.loader-line-wrap:nth-child(2) {
+    animation-delay: -100ms;
+}
+
+.loader-line-wrap:nth-child(3) {
+    animation-delay: -150ms;
+}
+
+.loader-line-wrap:nth-child(4) {
+    animation-delay: -200ms;
+}
+
+.loader-line-wrap:nth-child(5) {
+    animation-delay: -250ms;
+}
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html
+    style="background-color: rgba(30, 34, 60, 0.966);background:repeating-linear-gradient(to right,rgba(30, 34, 60, 0.966),rgba(54, 61, 106, 0.966));">
+
+<head>
+    <title>ヾ(•ω•`) 每日一题 | neverforward</title>
+    <style>
+        .body {
+            position: relative;
+            background-color: rgba(30, 34, 60, 0.966);
+            background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 15px 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .vertical-menu {
+            margin-left: 10px;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            /* 如果需要垂直堆叠 */
+            gap: 10px;
+            border-radius: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .vertical-menu a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .vertical-menu a:hover {
+            background-color: rgb(54, 63, 120);
+            border-radius: 5px;
+        }
+
+        .main {
+            padding-top: 2%;
+            margin-left: 5%;
+            background-color: rgba(38, 44, 81, 0.966);
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            border-radius: 100%;
+            border-style: solid;
+            border-color: #202020;
+            border-width: 5px;
+        }
+
+        .icon:hover {
+            box-shadow: 4px 4px 10px rgba(27, 31, 58, 0.966);
+        }
+    </style>
+    <link href="../style.css" rel="stylesheet">
+    <script src="../../typewriter.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="../../icon/file.ico">
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link href="../../bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+
+    <script src="../../prism.js"></script>
+    <link href='../../prism-themes-master/themes/prism-one-dark.css' rel="stylesheet">
+    <script src="../../prism-themes-master/plugins/download-button/prism-download-button.js"></script>
+    <script src="../../prism-themes-master/plugins/toolbar/prism-toolbar.js"></script>
+    <link rel="stylesheet" href="../../prism-themes-master/plugins/toolbar/prism-toolbar.css">
+    <script src="../../prism-themes-master/plugins/line-numbers/prism-line-numbers.js"></script>
+    <link rel="stylesheet" href="../../prism-themes-master/plugins/line-numbers/prism-line-numbers.css">
+    <script src="../../prism-themes-master/plugins/data-uri-highlight/prism-data-uri-highlight.js"></script>
+    <script src="../../prism-themes-master/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.js"></script>
+</head>
+
+
+<body style="background-size: 100% 100%;">
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.querySelector('.loader').style.display = 'none';
+        };
+    </script>
+    <div class="body">
+        <div class="vertical-menu">
+            <a href="../../index.html"><i class="fa fa-home" style="font-size: 30px;color: #28BF94;"></i></a>
+            <a href="../../projects.html"><i class="fa fa-folder"
+                    style="font-size: 25px; color: rgb(255, 230, 0);"></i></a>
+            <a href="https://github.com/neverforward"><i class="fa fa-github"
+                    style="font-size: 30px;color: white;"></i></a>
+        </div>
+        <div class="main">
+            <div style="padding-left: 5%;text-align: left;">
+                <img src="../../icon/icon.ico" width="100px" height="100px" class="icon">
+                <h2 style="color: white;margin-top: -90px;margin-left: 125px;">&nbsp;neverforward</h2>
+                <p style="margin-left: 125px;color: white;">&nbsp;&nbsp;<i class="fa fa-address-card"
+                        style="font-size: 20px;color: rgb(0, 115, 255);"></i> age: 10</p>
+            </div>
+            <br />
+            <div class="word">
+                <h1>每日亿题 - 4</h1>
+                <button onclick="window.location.href='3.html'">上一页</button>
+                <button onclick="window.location.href='1.html'">1</button>
+                <button onclick="window.location.href='2.html'">2</button>
+                <button onclick="window.location.href='3.html'">3</button>
+                <button onclick="window.location.href='4.html'">4</button>
+                <button onclick="window.location.href='4.html'">下一页</button>
+                <br />
+                <h3>1016 - 买小猫小狗</h3>
+                <h4>题目描述</h4>
+                <p>某动物饲养中心用<math>
+                        <mi>X</mi>
+                    </math>元专款购买小狗(每只<math>
+                        <mi>A</mi>
+                    </math>元)和小猫(每只<math>
+                        <mi>B</mi>
+                    </math>元)两种小动物。<br />要求专款专用，(至少猫狗各一)，正好用完。<br />请求出方案的总数。如没有请输出<math>
+                        <mn>0</mn>
+                    </math>。</p>
+                <h4>输入</h4>
+                <p>输入一行，只有三个整数。分别为<math>
+                        <mi>X</mi>
+                    </math>，<math>
+                        <mi>A</mi>
+                    </math>，<math>
+                        <mi>B</mi>
+                    </math>。（<math>
+                        <mn>100</mn>
+                        <mo>&lt;</mo>
+                        <mi>X</mi>
+                        <mo>&lt;</mo>
+                        <mn>32768</mn>
+                    </math>，<math>
+                        <mn>1</mn>
+                        <mo>≤</mo>
+                        <mi>A</mi>
+                        <mo>≤</mo>
+                        <mn>100</mn>
+                    </math>，<math>
+                        <mn>1</mn>
+                        <mo>≤</mo>
+                        <mi>B</mi>
+                        <mo>≤</mo>
+                        <mn>100</mn>
+                    </math>）</p>
+                <h4>输出</h4>
+                <p>输出只有一行（这意味着末尾有一个回车符号），包括<math>
+                        <mn>1</mn>
+                    </math>个整数。</p>
+                <h4>code:</h4>
+                <pre style="margin-right: 10px;" class="codes"><code class="language-cpp line-numbers">
+#include&lt;iostream&gt;
+using namespace std;
+int main(){ 
+    int x,a,b,i,f=0;
+    cin&gt;&gt;x&gt;&gt;a&gt;&gt;b;
+    for(i=1;i&lt;=x/a;i++){ 
+        if((x-i*a&gt;=b)&&(x-i*a)%b==0){
+            f++;
+        }
+    }
+    cout&lt;&lt;f&lt;&lt;endl;
+    return 0;
+}
+                </code></pre>
+                <br />
+                <h3>1017 - 求零件个数</h3>
+                <h4>题目描述</h4>
+                <p>有<math>
+                        <mn>100</mn>
+                    </math>多个的零件，若三个三个数，剩二个；若五个五个数，剩三个；若七个七个数，剩五个。请你编一个程序计算出这堆零件至少是多少个？</p>
+                <h4>输入</h4>
+                <p>无</p>
+                <h4>输出</h4>
+                <p>一行，一个整数。</p>
+                <h4>code:</h4>
+                <pre style="margin-right: 10px;" class="codes"><code class="language-cpp line-numbers">
+#include&lt;iostream&gt;
+#include&lt;iomanip&gt;
+using namespace std;
+int main(){
+    int i;
+    for(i=100;i&lt;=100000000;i++){
+        if(i%3==2&&i%5==3&&i%7==5){
+            cout&lt;&lt;i&lt;&lt;endl;
+            break;
+		}
+	}
+}
+                </code></pre>
+                <br />
+                <h3>1018 - 三角形类别</h3>
+                <h4>题目描述</h4>
+                <p>输入三个整数，以这三个数为边长，判断是否构成三角形；若不能输出<span
+                        class="code">no</span>。<br>若构成三角形，进一步判断它们构的是：锐角三角形或直角三角形或钝角三角形。<br>分别输出<span
+                        class="code">ruijiao</span>，<span class="code">zhijiao</span>，<span class="code">dunjiao</span>。
+                </p>
+                <h4>输入</h4>
+                <p>一行，三个整数，以空格隔开。</p>
+                <h4>输出</h4>
+                <p>一个字符串。</p>
+                <h4>code:</h4>
+                <pre style="margin-right: 10px;" class="codes"><code class="language-cpp line-numbers">
+#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    int a,b,c;
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;
+    if(a+b&gt;c&&a+c&gt;b&&c+b&gt;a){
+        if(a*a+b*b==c*c||a*a+c*c==b*b||c*c+b*b==a*a){
+            cout&lt;&lt;"zhijiao";
+		}
+		else if(a*a+b*b&lt;c*c||a*a+c*c&lt;b*b||c*c+b*b&lt;a*a){
+			cout&lt;&lt;"dunjiao";
+		}
+		else if(a*a+b*b&gt;c*c||a*a+c*c&gt;b*b||c*c+b*b&gt;a*a){
+			cout&lt;&lt;"ruijiao";
+		}
+	}else{
+		cout&lt;&lt;"no";
+	}
+    return 0;
+}
+                </code></pre>
+                <br />
+                <h3>1019 - 求1!+2!+...+N!</h3>
+                <h4>题目描述</h4>
+                <p><math>
+                        <mi>N</mi>
+                        <mo>!</mo>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                        <mo>×</mo>
+                        <mn>2</mn>
+                        <mo>×</mo>
+                        <mo>...</mo>
+                        <mo>×</mo>
+                        <mi>N</mi>
+                    </math>;<br />例如：<math>
+                        <mn>5</mn>
+                        <mo>!</mo>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                        <mo>×</mo>
+                        <mn>2</mn>
+                        <mo>×</mo>
+                        <mn>3</mn>
+                        <mo>×</mo>
+                        <mn>4</mn>
+                        <mo>×</mo>
+                        <mn>5</mn>
+                        <mo>=</mo>
+                        <mn>120</mn>
+                    </math>;<br />编程求<math>
+                        <mn>1</mn>
+                        <mo>!</mo>
+                        <mo>+</mo>
+                        <mn>2</mn>
+                        <mo>!</mo>
+                        <mo>+</mo>
+                        <mn>3</mn>
+                        <mo>!</mo>
+                        <mo>+</mo>
+                        <mo>...</mo>
+                        <mi>N</mi>
+                        <mo>!</mo>
+                    </math>;</p>
+                <h4>输入</h4>
+                <p>输入一行，只有一个整数<math>
+                        <mi>n</mi>
+                        <mo>(</mo>
+                        <mn>1</mn>
+                        <mo>≤</mo>
+                        <mi>n</mi>
+                        <mo>≤</mo>
+                        <mn>10</mn>
+                        <mo>)</mo>
+                    </math>;</p>
+                <br>
+                <button onclick="window.location.href='3.html'">上一页</button>
+                <button onclick="window.location.href='1.html'">1</button>
+                <button onclick="window.location.href='2.html'">2</button>
+                <button onclick="window.location.href='3.html'">3</button>
+                <button onclick="window.location.href='4.html'">4</button>
+                <button onclick="window.location.href='4.html'">下一页</button>
+                <br>
+                <br>
+                <pre class="note-end">
+<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"viewBox="0 0 16 16" role="img" aria-label="info" fill="#429cf6" width="24" height="24"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" /></svg>本页作者：github @neverforward
+    链接：neverforward.github.io/word/题目/3.html</pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

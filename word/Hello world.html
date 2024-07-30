@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>ヾ(•ω•`)o Hello world | neverforward</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    <style>
+        .body {
+            position: relative;
+            background-color: rgba(30, 34, 60, 0.966);
+            background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 15px 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .vertical-menu {
+            margin-left: 10px;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            /* 如果需要垂直堆叠 */
+            gap: 10px;
+            border-radius: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .vertical-menu a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .vertical-menu a:hover {
+            background-color: rgb(54, 63, 120);
+            border-radius: 5px;
+        }
+
+        .main {
+            padding-top: 2%;
+            margin-left: 5%;
+            background-color: rgba(38, 44, 81, 0.966);
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            border-radius: 100%;
+            border-style: solid;
+            border-color: #202020;
+            border-width: 5px;
+        }
+
+        .icon:hover {
+            box-shadow: 4px 4px 10px rgba(27, 31, 58, 0.966);
+        }
+    </style>
+    <script src="../typewriter.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="../icon/file.ico">
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link href="../bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="../prism.js"></script>
+    <link href='../prism-themes-master/themes/prism-one-dark.css' rel="stylesheet">
+    <script src="../prism-themes-master/plugins/download-button/prism-download-button.js"></script>
+    <script src="../prism-themes-master/plugins/toolbar/prism-toolbar.js"></script>
+    <link rel="stylesheet" href="../prism-themes-master/plugins/toolbar/prism-toolbar.css">
+    <script src="../prism-themes-master/plugins/line-numbers/prism-line-numbers.js"></script>
+    <link rel="stylesheet" href="../prism-themes-master/plugins/line-numbers/prism-line-numbers.css">
+    <script src="../prism-themes-master/plugins/data-uri-highlight/prism-data-uri-highlight.js"></script>
+    <script src="../prism-themes-master/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.js"></script>
+</head>
+
+
+<body>
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.querySelector('.loader').style.display = 'none';
+        };
+    </script>
+    <div class="body">
+        <div class="vertical-menu">
+            <a href="../index.html" title="home"><i class="fa fa-home" style="font-size: 30px;color: #28BF94;"></i></a>
+            <a href="../projects.html" title="projects"><i class="fa fa-folder"
+                    style="font-size: 25px; color: rgb(255, 230, 0);">&nbsp;</i>&nbsp;</a>
+            <a href="https://github.com/neverforward" title="github"><i class="fa fa-github"
+                    style="font-size: 30px;color: white;"></i></a>
+        </div>
+        <div class="main">
+            <div style="padding-left: 5%;text-align: left;">
+                <img src="../icon/icon.ico" width="100px" height="100px" class="icon" alt="">
+                <h2 style="color: white;margin-top: -90px;margin-left: 125px;">&nbsp;neverforward</h2>
+                <p style="margin-left: 125px;color: white;">&nbsp;&nbsp;<i class="fa fa-address-card"
+                        style="font-size: 20px;color: rgb(0, 115, 255);"></i> age: 10</p>
+            </div>
+            <br />
+            <div class="word">
+                <h1>代码</h1>
+                <p class="code">code</p>
+                <br/>
+                <pre class="codes"><code class="lang-cpp line-numbers">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout&lt;&lt;"Hello world!"&lt;&lt;endl;
+    return 0;
+}
+                </code></pre>
+                <h1>提醒块</h1>
+                <div class="note-warning" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+                        viewBox="0 0 16 16" role="img" aria-label="warning" fill="#ffdd79" width="24" height="24">
+                        <path
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                        </path>
+                    </svg>
+                    警告
+                </div>
+                <div class="note-info" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+                        viewBox="0 0 16 16" role="img" aria-label="info" fill="#429cf6" width="24" height="24">
+                        <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                    </svg>
+                    信息
+                </div>
+                <div class="note-danger" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+                        viewBox="0 0 16 16" role="img" aria-label="danger:" fill="#fe4c4c" width="24" height="24">
+                        <path
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    危险
+                </div>
+                <h1>文字效果</h1>
+                <ins>下划线</ins>
+                <ins class="wavy">波浪线</ins>
+                <ins class="dot">着重点</ins>
+
+                <p class="spoiler">spoiler</p>
+                <br>
+                <p class="blue">blue</p>
+                <p class="indigo">indigo</p>
+                <p class="purple">purple</p>
+                <p class="pink">pink</p>
+                <p class="red">red</p>
+                <p class="orange">orange</p>
+                <p class="yellow">yellow</p>
+                <p class="green">green</p>
+                <p class="teal">teal</p>
+                <p class="cyan">cyan</p>
+                <p class="white">white</p>
+                <p class="gray">gray</p>
+                <p class="gray-dark">gray-dark</p>
+                <p class="primary">primary</p>
+                <p class="secondary">secondary</p>
+                <p class="success">success</p>
+                <p class="info">info</p>
+                <p class="warning">warning</p>
+                <p class="danger">danger</p>
+                <p class="light">light</p>
+                <p class="dark">dark</p>
+                <h1>h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+                <h6>h6</h6>
+                <h1>链接</h1>
+                <div class="link">
+                    <p class="h1">text1</p>
+                </div>
+                <h1>列表</h1>
+                <ul>
+                    <li class="done">1</li>
+                    <li class="done">2</li>
+                    <li class="done">3</li>
+                </ul>
+                <ol>
+                    <li class="done">1</li>
+                    <li class="done">2</li>
+                    <li class="done">3</li>
+                </ol>
+                <div class="note">
+                    普通引用
+                </div>
+                <br />
+                <h1>数学</h1>
+                <math display="block">
+                    <mi>f</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <munderover>
+                        <mo>∑</mo>
+                        <mrow>
+                            <mi>i</mi>
+                            <mo>=</mo>
+                            <mn>1</mn>
+                        </mrow>
+                        <mi>x</mi>
+                    </munderover>
+                </math>
+                <br>
+                <pre class="note-end" role="alert">
+<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"viewBox="0 0 16 16" role="img" aria-label="info" fill="#429cf6" width="24" height="24"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" /></svg>本页作者：github @neverforward
+    链接：neverforward.github.io/word/Hello%20world.html</pre>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
