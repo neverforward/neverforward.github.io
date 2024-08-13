@@ -1,85 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html style="
+background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
+background-image: url(bg.jpg);
+background-size: 100% 100%;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+background-attachment:fixed;
+">
 
 <head>
     <title>ヾ(•ω•`)o Hello world | neverforward</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </meta>
-    <style>
-        .body {
-            position: relative;
-            background-color: rgba(30, 34, 60, 0.966);
-            background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
-            margin-bottom: 10px;
-        }
-
-        .button {
-            padding: 15px 20px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
-        }
-
-        .button:hover {
-            background-color: #3e8e41
-        }
-
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-
-        .vertical-menu {
-            margin-left: 10px;
-            margin-top: 2%;
-            display: flex;
-            flex-direction: column;
-            /* 如果需要垂直堆叠 */
-            gap: 10px;
-            border-radius: 5px;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .vertical-menu a {
-            color: black;
-            padding: 12px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .vertical-menu a:hover {
-            background-color: rgb(54, 63, 120);
-            border-radius: 5px;
-        }
-
-        .main {
-            padding-top: 2%;
-            margin-left: 5%;
-            background-color: rgba(38, 44, 81, 0.966);
-            margin-bottom: 20px;
-        }
-
-        .icon {
-            border-radius: 100%;
-            border-style: solid;
-            border-color: #202020;
-            border-width: 5px;
-        }
-
-        .icon:hover {
-            box-shadow: 4px 4px 10px rgba(27, 31, 58, 0.966);
-        }
-    </style>
     <script src="../typewriter.min.js"></script>
     <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="icon" href="../icon/file.ico">
@@ -143,7 +76,7 @@
             <div class="word">
                 <h1>代码</h1>
                 <p class="code">code</p>
-                <br/>
+                <br />
                 <pre class="codes"><code class="lang-cpp line-numbers">
 #include &lt;iostream&gt;
 using namespace std;
@@ -249,7 +182,42 @@ int main() {
                         <mi>x</mi>
                     </munderover>
                 </math>
-                <br>
+                <h1>表格</h1>
+                <table>
+                    <tr>
+                        <th>名字</th>
+                        <th>学号</th>
+                        <th>班别</th>
+                    </tr>
+                    <tr>
+                        <td>张三</td>
+                        <td>001</td>
+                        <td>四(6)</td>
+                    </tr>
+                    <tr>
+                        <td>李四</td>
+                        <td>002</td>
+                        <td>三(4)</td>
+                    </tr>
+                </table>
+                <h1>标签</h1>
+                <div class="tag-pink">pink</div>
+                <div class="tag-red">red</div>
+                <div class="tag-orange">orange</div>
+                <div class="tag-green">green</div>
+                <div class="tag-cyan">cyan</div>
+                <div class="tag-blue">blue</div>
+                <div class="tag-purple">purple</div>
+                <br/>
+                <br/>
+                <h1>标签快</h1>
+                <div class="block-default">默认</div>
+                <div class="block-primary">基本</div>
+                <div class="block-info">提示</div>
+                <div class="block-success">成功</div>
+                <div class="block-warning">警告</div>
+                <div class="block-danger">危险</div>
+                <br/>
                 <pre class="note-end" role="alert">
 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"viewBox="0 0 16 16" role="img" aria-label="info" fill="#429cf6" width="24" height="24"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" /></svg>本页作者：github @neverforward
     链接：neverforward.github.io/word/Hello%20world.html</pre>

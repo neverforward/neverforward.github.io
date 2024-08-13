@@ -1,83 +1,15 @@
 <!DOCTYPE html>
-<html
-    style="background-color: rgba(30, 34, 60, 0.966);background:repeating-linear-gradient(to right,rgba(30, 34, 60, 0.966),rgba(54, 61, 106, 0.966));">
+<html style="
+background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
+background-image: url(../bg.jpg);
+background-size: 100% 100%;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+background-attachment:fixed;
+">
 
 <head>
     <title>ヾ(•ω•`) 每日一题 | neverforward</title>
-    <style>
-        .body {
-            position: relative;
-            background-color: rgba(30, 34, 60, 0.966);
-            background: repeating-linear-gradient(to right, rgba(30, 34, 60, 0.966), rgba(54, 61, 106, 0.966));
-            margin-bottom: 10px;
-        }
-
-        .button {
-            padding: 15px 20px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
-        }
-
-        .button:hover {
-            background-color: #3e8e41
-        }
-
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
-
-        .vertical-menu {
-            margin-left: 10px;
-            margin-top: 2%;
-            display: flex;
-            flex-direction: column;
-            /* 如果需要垂直堆叠 */
-            gap: 10px;
-            border-radius: 5px;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .vertical-menu a {
-            color: black;
-            padding: 12px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .vertical-menu a:hover {
-            background-color: rgb(54, 63, 120);
-            border-radius: 5px;
-        }
-
-        .main {
-            padding-top: 2%;
-            margin-left: 5%;
-            background-color: rgba(38, 44, 81, 0.966);
-            margin-bottom: 20px;
-        }
-
-        .icon {
-            border-radius: 100%;
-            border-style: solid;
-            border-color: #202020;
-            border-width: 5px;
-        }
-
-        .icon:hover {
-            box-shadow: 4px 4px 10px rgba(27, 31, 58, 0.966);
-        }
-    </style>
     <link href="../style.css" rel="stylesheet">
     <script src="../../typewriter.min.js"></script>
     <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
@@ -317,6 +249,62 @@ int main(){
                         <mn>10</mn>
                         <mo>)</mo>
                     </math>;</p>
+                <h4>输出</h4>
+                <p>输出只有一行，包括<math><mn>1</mn></math>个整数。</p>
+                <h4>code:</h4>
+                <pre style="margin-right: 10px;" class="codes"><code class="language-cpp line-numbers">
+#include &lt;iostream&gt;  
+using namespace std;  
+
+int factorial(int n) {  
+    if (n == 0 || n == 1) {  
+        return 1;  
+    } else {  
+        return n * factorial(n - 1);  
+    }  
+}  
+
+int main() {  
+    int N, sum = 0;  
+    cin &gt;&gt; N;  
+    for (int i = 1; i &lt;= N; i++) {  
+        sum += factorial(i);  
+    }  
+    cout &lt;&lt; sum &lt;&lt; endl;  
+    return 0;  
+}
+                </code></pre>
+                <br />
+                <h3>1020 - 算算和是多少</h3>
+                <h4>题目描述</h4>
+                <p>输入一个三位正整数，然后与它倒过来的数相加，输出和。<br />如：输入<math>
+                        <mn>167</mn>
+                        <mo>+</mo>
+                        <mn>761</mn>
+                        <mo>=</mo>
+                        <mn>928</mn>
+                    </math></p>
+                <h4>输入</h4>
+                <p>只有一行，一个三位正整数。</p>
+                <h4>输出</h4>
+                <p>一个正整数</p>
+                <h4>code:</h4>
+                <pre class="codes"><code class="language-cpp line-numbers">
+#include&lt;iostream&gt;
+#include&lt;iomanip&gt;
+using namespace std;
+int main()
+{
+	int p;
+	cin&gt;&gt;p;
+	int a=p/100;
+	int b=p/10%10;
+	int c=p%10;
+	int q=c*100+b*10+a;
+	cout&lt;&lt;q+p;
+	return 0;
+}</code></pre>
+                <br />
                 <br>
                 <button onclick="window.location.href='3.html'">上一页</button>
                 <button onclick="window.location.href='1.html'">1</button>
@@ -328,7 +316,7 @@ int main(){
                 <br>
                 <pre class="note-end">
 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"viewBox="0 0 16 16" role="img" aria-label="info" fill="#429cf6" width="24" height="24"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" /></svg>本页作者：github @neverforward
-    链接：neverforward.github.io/word/题目/3.html</pre>
+    链接：neverforward.github.io/word/题目/4.html</pre>
             </div>
         </div>
     </div>
