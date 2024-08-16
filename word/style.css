@@ -4,6 +4,54 @@
     src: url("//at.alicdn.com/t/font_1832207_igi8uaupcus.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_1832207_igi8uaupcus.woff2") format('woff2'), url("//at.alicdn.com/t/font_1832207_igi8uaupcus.woff") format('woff'), url("//at.alicdn.com/t/font_1832207_igi8uaupcus.ttf") format('truetype'), url("//at.alicdn.com/t/font_1832207_igi8uaupcus.svg#ic") format('svg')
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rainbow {
+    to {
+        background-position: -2000vw;
+    }
+}
+
+@-moz-keyframes rainbow {
+    to {
+        background-position: -2000vw;
+    }
+}
+
+@keyframes rainbow {
+    to {
+        background-position: -2000vw;
+    }
+}
+
 .button {
     padding: 15px 20px;
     font-size: 24px;
@@ -134,10 +182,10 @@
     color: white;
     text-decoration: none;
     background-color: #006aff6e;
-    background-image: -webkit-gradient(linear, left top, right top, from(#0091ff6e), to(#005eff6e));
-    background-image: -webkit-linear-gradient(left, #0091ff6e, #005eff6e);
-    background-image: -moz-linear-gradient(left, #0091ff6e, #005eff6e);
-    background-image: linear-gradient(to right, #0091ff6e, #005eff6e);
+    background: -webkit-gradient(linear, left top, right top, from(#EE82EE), to(#00D1FF));
+    background: -webkit-linear-gradient(left, #EE82EE 0%, #00D1FF 100%);
+    background: -moz-linear-gradient(left, #EE82EE 0%, #00D1FF 100%);
+    background: linear-gradient(90deg, #EE82EE 0%, #00D1FF 100%);
     border: none;
     border-radius: 5px;
     margin-left: 200px;
@@ -426,7 +474,7 @@
 
 .word .note {
     border-left: .25rem solid var(--bs-primary);
-    background-color: rgba(51, 59, 112, .966);
+    background-color: #7c7c7c6e;
     color: var(--bs-white)
 }
 
@@ -461,22 +509,80 @@
 }
 
 .word .link {
-    background-color: rgba(62, 66, 91, .966);
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    -webkit-box-shadow: 0 0 10px #3a465c;
-    box-shadow: 0 0 10px #3a465c;
+    position: relative;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: inline-flex;
+    justify-self: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+            align-items: center;
+    line-height: 1.5;
+    width: -webkit-calc(50% - 2rem);
+    width: -moz-calc(50% - 2rem);
+    width: calc(50% - 2rem);
+    padding: .5rem 1rem;
+    margin: 1rem;
+    -webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+    border-radius: .5rem;
+    border: .0625rem solid #363636;
+    -webkit-box-shadow: 0 .625rem 1.875rem -.9375rem #000;
+    box-shadow: 0 .625rem 1.875rem -.9375rem #000;
+    font-size: .9rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s
 }
 
+.word .link img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: .9375rem;
+    background: #21252b center no-repeat;
+    background-size: contain;
+}
+
+.word .link div {
+    padding-left: 1rem;
+}
+
+.word .link div .title {
+    margin: .5rem 0;
+    font-family: Mulish, 'Noto Serif JP', 'Noto Serif SC', Mulish, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-weight: 700;
+    color: var(--bg-color);
+    border: none;
+    font-size: large;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s
+}
+
+.word .link div .text {
+    font-size: .75em;
+    margin: .5rem 0;
+}
+
 .word .link:hover {
-    background-color: rgba(67, 92, 254, .966);
-    -webkit-box-shadow: 8px 8px 10px #3a465c, -8px -8px 10px #3a465c;
-    box-shadow: 8px 8px 10px #3a465c, -8px -8px 10px #3a465c;
+    color: var(--header-text-color);
+    background-color: var(--bg-color);
+    -webkit-box-shadow: 0 .125rem 1.25rem var(--bg-color);
+    box-shadow: 0 .125rem 1.25rem var(--bg-color);
+    border-color: var(--bg-color);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s
+}
+
+.word .link:hover div .title {
+    color: #ccc;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s
@@ -548,14 +654,33 @@
     font-family: 'cascadia mono', 'cascidia code';
     margin-right: 10px;
     background-color: #0000006e;
+    padding-top: 30px;
 }
 
 .word .codes code {
     background-color: unset;
 }
 
-.word ol li.done::before,
-.word ul li.done::before {
+.word .code-toolbar .toolbar {
+    margin-right: 10px;
+}
+
+.word .code-toolbar::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #fc625d;
+    width: .75rem;
+    height: .75rem;
+    left: .75rem;
+    top: .8125rem;
+    -webkit-box-shadow: 1.25rem 0 #fdbc40, 2.5rem 0 #35cd4b;
+    box-shadow: 1.25rem 0 #fdbc40, 2.5rem 0 #35cd4b;
+}
+
+.word ol li::before,
+.word ul li::before {
+    content: "";
     display: inline;
     border-radius: 50%;
     position: absolute;
@@ -564,7 +689,7 @@
     transition: all .2s
 }
 
-.word ul li.done::before {
+.word ul li::before {
     content: "";
     border: 1px solid var(--bs-primary);
     width: .4em;
@@ -573,7 +698,8 @@
     margin-left: -10px
 }
 
-.word ul li:hover.done::before {
+.word ul li:hover::before {
+    content: "";
     background-color: #2a7ffd;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
@@ -582,11 +708,11 @@
 
 .word ol li,
 .word ul li {
-    margin-left: -25px;
+    margin-left: -22px;
     list-style: none
 }
 
-.word ol li.done::before {
+.word ol li::before {
     counter-increment: counter;
     content: counter(counter);
     border: 4px solid var(--bs-primary);
@@ -601,7 +727,8 @@
     font-family: 'cascadia code light'
 }
 
-.word ol li:hover.done::before {
+.word ol li:hover::before {
+    content: counter(counter);
     background-color: #5498ff;
     border: 4px solid #5498ff;
     -webkit-transition: all .2s;
@@ -701,6 +828,20 @@
 
     .dark {
         color: var(--bs-dark);
+    }
+
+    .rainbow {
+        color: white;
+        background-image: -webkit-gradient(linear,right top, left top,from(#ff4500),color-stop(orange),color-stop(gold),color-stop(#90ee90),color-stop(#0ff),color-stop(#1e90ff),color-stop(#9370db),color-stop(#ff69b4),to(#ff4500));
+        background-image: -webkit-linear-gradient(right,#ff4500,orange,gold,#90ee90,#0ff,#1e90ff,#9370db,#ff69b4,#ff4500);
+        background-image: -moz-linear-gradient(right,#ff4500,orange,gold,#90ee90,#0ff,#1e90ff,#9370db,#ff69b4,#ff4500);
+        background-image: linear-gradient(to left,#ff4500,orange,gold,#90ee90,#0ff,#1e90ff,#9370db,#ff69b4,#ff4500);
+        background-size: 110vw;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-animation: rainbow 60s linear infinite;
+           -moz-animation: rainbow 60s linear infinite;
+                animation: rainbow 60s linear infinite;
     }
 }
 
@@ -956,11 +1097,6 @@
     border-color: #594967;
 }
 
-.word .test::before {
-    font-family: ic;
-    content: "\ef23 \f082 \f02b \ef66 \efb5 \f050";
-}
-
 .word .block-default::before,
 .word .block-primary::before,
 .word .block-info::before,
@@ -1081,4 +1217,404 @@
 .word .block-danger::before {
     color: #ef264fcc;
     content: "\f050";
+}
+
+
+.word details {
+    margin-top: .625rem;
+}
+
+
+/* primary(purple) */
+.word details[theme="primary"] summary {
+    list-style: none;
+    background-color: #323132cc;
+    color: #a174cdcc;
+    outline: 0;
+    cursor: pointer;
+    padding: .625rem;
+    border-radius: .25rem;
+}
+
+.word details[theme="primary"][open] summary {
+    color: #ccc;
+}
+
+.word details[theme="primary"] summary::before {
+    font-family: ic;
+    content: "\ef1f";
+}
+
+.word details[theme="primary"][open] summary::before {
+    font-family: ic;
+    color: #a174cdcc;
+    content: "\ef1a";
+}
+
+.word details[theme="primary"][open] summary::before {
+    color: #ccc;
+}
+
+.word details[theme="primary"][open] summary {
+    background-color: #7448a195;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="primary"]>div {
+    background-color: #32323086;
+    border-radius: 0 0 .25rem .25rem;
+    padding: .625rem;
+    -webkit-animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+
+.word details[theme="primary"] div ol li:hover::before {
+    background-color: #9e48a1;
+    border: 4px solid #9e48a1;
+}
+
+.word details[theme="primary"] div ol li::before {
+    background-color: #7448a1;
+    border: 4px solid #7448a1;
+    color: #ccc;
+}
+
+.word details[theme="primary"] div ul li {
+    color: #7448a1;
+}
+
+.word details[theme="primary"] div ul li:hover::before {
+    background-color: #9e48a1;
+}
+
+.word details[theme="primary"] div ol li {
+    margin-left: .25rem;
+    color: #7448a1;
+}
+
+.word details[theme="primary"] div ul li::before {
+    border: 1px solid #7448a1;
+}
+
+
+
+/* info(blue) */
+
+.word details[theme="info"] summary {
+    list-style: none;
+    background-color: #323132cc;
+    color: #6da4dbcc;
+    outline: 0;
+    cursor: pointer;
+    padding: .625rem;
+    border-radius: .25rem;
+}
+
+.word details[theme="info"][open] summary {
+    color: #ccc;
+}
+
+.word details[theme="info"] summary::before {
+    font-family: ic;
+    content: "\ef1f";
+}
+
+.word details[theme="info"][open] summary::before {
+    font-family: ic;
+    color: #6da4dbcc;
+    content: "\ef1a";
+}
+
+.word details[theme="info"][open] summary::before {
+    color: #ccc;
+}
+
+.word details[theme="info"][open] summary {
+    background-color: #277fd6cc;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="info"]>div {
+    background-color: #32323086;
+    border-radius: 0 0 .25rem .25rem;
+    padding: .625rem;
+    -webkit-animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+
+
+.word details[theme="info"] div ol li:hover::before {
+    background-color: #27bfd6;
+    border: 4px solid #27bfd6;
+}
+
+.word details[theme="info"] div ol li::before {
+    background-color: #277fd6;
+    border: 4px solid #277fd6;
+    color: #ccc;
+}
+
+.word details[theme="info"] div ul li {
+    color: #277fd6;
+}
+
+.word details[theme="info"] div ul li:hover::before {
+    background-color: #27bfd6;
+}
+
+.word details[theme="info"] div ol li {
+    margin-left: .25rem;
+    color: #277fd6;
+}
+
+.word details[theme="info"] div ul li::before {
+    border: 1px solid #277fd6;
+}
+
+
+/* success(green) */
+
+.word details[theme="success"] summary {
+    list-style: none;
+    background-color: #323132cc;
+    color: #295f2acc;
+    outline: 0;
+    cursor: pointer;
+    padding: .625rem;
+    border-radius: .25rem;
+}
+
+.word details[theme="success"][open] summary {
+    color: #ccc;
+}
+
+.word details[theme="success"] summary::before {
+    font-family: ic;
+    content: "\ef1f";
+}
+
+.word details[theme="success"][open] summary::before {
+    font-family: ic;
+    color: #295f2acc;
+    content: "\ef1a";
+}
+
+.word details[theme="success"][open] summary::before {
+    color: #ccc;
+}
+
+.word details[theme="success"][open] summary {
+    background-color: #80c881cc;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="success"]>div {
+    background-color: #32323086;
+    border-radius: 0 0 .25rem .25rem;
+    padding: .625rem;
+    -webkit-animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="success"] div ol li:hover::before {
+    background-color: #b1c880;
+    border: 4px solid #b1c880;
+}
+
+.word details[theme="success"] div ol li::before {
+    background-color: #80c881;
+    border: 4px solid #80c881;
+    color: #ccc;
+}
+
+.word details[theme="success"] div ul li {
+    color: #80c881;
+}
+
+.word details[theme="success"] div ul li:hover::before {
+    background-color: #b1c880;
+}
+
+.word details[theme="success"] div ol li {
+    margin-left: .25rem;
+    color: #80c881;
+}
+
+.word details[theme="success"] div ul li::before {
+    border: 1px solid #b1c880;
+}
+
+/* warning(yellow) */
+
+.word details[theme="warning"] summary {
+    list-style: none;
+    background-color: #323132cc;
+    color: #dcb000cc;
+    outline: 0;
+    cursor: pointer;
+    padding: .625rem;
+    border-radius: .25rem;
+}
+
+.word details[theme="warning"][open] summary {
+    color: #ccc;
+}
+
+.word details[theme="warning"] summary::before {
+    font-family: ic;
+    content: "\ef1f";
+}
+
+.word details[theme="warning"][open] summary::before {
+    font-family: ic;
+    color: #dcb000cc;
+    content: "\ef1a";
+}
+
+.word details[theme="warning"][open] summary::before {
+    color: #ccc;
+}
+
+.word details[theme="warning"][open] summary {
+    background-color: #dcb000cc;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="warning"]>div {
+    background-color: #32323086;
+    border-radius: 0 0 .25rem .25rem;
+    padding: .625rem;
+    -webkit-animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="warning"] div ol li:hover::before {
+    background-color: #dc9300;
+    border: 4px solid #dc9300;
+}
+
+.word details[theme="warning"] div ol li::before {
+    background-color: #dcb000;
+    border: 4px solid #dcb000;
+    color: #ccc;
+}
+
+.word details[theme="warning"] div ul li {
+    color: #dcb000;
+}
+
+.word details[theme="warning"] div ul li:hover::before {
+    background-color: #dc9300;
+}
+
+.word details[theme="warning"] div ol li {
+    margin-left: .25rem;
+    color: #dcb000;
+}
+
+.word details[theme="warning"] div ul li::before {
+    border: 1px solid #dcb000;
+}
+
+/* danger(red) */
+.word details[theme="danger"] summary {
+    list-style: none;
+    background-color: #323132cc;
+    color: #ef264fcc;
+    outline: 0;
+    cursor: pointer;
+    padding: .625rem;
+    border-radius: .25rem;
+}
+
+.word details[theme="danger"][open] summary {
+    color: #ccc;
+}
+
+.word details[theme="danger"] summary::before {
+    font-family: ic;
+    content: "\ef1f";
+}
+
+.word details[theme="danger"][open] summary::before {
+    font-family: ic;
+    color: #ef264fcc;
+    content: "\ef1a";
+}
+
+.word details[theme="danger"][open] summary::before {
+    color: #ccc;
+}
+
+.word details[theme="danger"][open] summary {
+    background-color: #ef264fcc;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="danger"]>div {
+    background-color: #32323086;
+    border-radius: 0 0 .25rem .25rem;
+    padding: .625rem;
+    -webkit-animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.word details[theme="danger"] div ol li:hover::before {
+    background-color: #ef2687;
+    border: 4px solid #ef2687;
+}
+
+.word details[theme="danger"] div ol li::before {
+    background-color: #ef264f;
+    border: 4px solid #ef264f;
+    color: #ccc;
+}
+
+.word details[theme="danger"] div ul li {
+    color: #ef264f;
+}
+
+.word details[theme="danger"] div ul li:hover::before {
+    background-color: #ef2687;
+}
+
+.word details[theme="danger"] div ol li {
+    margin-left: .25rem;
+    color: #ef264f;
+}
+
+.word details[theme="danger"] div ul li::before {
+    border: 1px solid #ef264f;
 }
